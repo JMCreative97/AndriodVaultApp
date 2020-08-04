@@ -1,0 +1,81 @@
+<!--
+  ~ Copyright 2018 The app Open Source Project
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~      http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout="@layout/settings_activity"
+    >
+
+    <PreferenceCategory
+        app:title="@string/authentication_header"
+
+        >
+
+        <SwitchPreferenceCompat
+            app:key="Authentication_sign_in_lock"
+            app:title="@string/Authentication_sign_in_lock_title"
+            android:summary="@string/Authentication_sign_in_lock_summary"
+            android:singleLine="true"
+            />
+
+        <EditTextPreference
+            app:key="Authentication_sign_in_lock_attempts"
+            app:title="@string/Authentication_sign_in_attempt_title"
+            android:singleLine="true"
+            android:dependency="Authentication_sign_in_lock"
+            />
+
+        <EditTextPreference
+            app:key="Authentication_sign_in_lock_timer"
+            app:title="@string/Authentication_sign_in_lock_timer_title"
+            android:singleLine="true"
+            android:dependency="Authentication_sign_in_lock"
+            />
+
+        <SwitchPreferenceCompat
+            app:key="Authentication_intruder_snap"
+            app:title="@string/Authentication_intruder_snap_title"
+            android:summary="@string/Authentication_intruder_snap_summary"
+            android:dependency="Authentication_sign_in_lock"
+            />
+
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="@string/user_header">
+
+        <EditTextPreference
+            app:key="User_change_email"
+            app:title="@string/User_change_email_title"
+            android:singleLine="true"
+            />
+
+        <EditTextPreference
+            app:key="User_change_password"
+            app:title="@string/User_change_password_title"
+            android:singleLine="true" />
+
+        <CheckBoxPreference
+            app:key="User_delete_account"
+            app:title="@string/User_delete_account_title"
+            />
+
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

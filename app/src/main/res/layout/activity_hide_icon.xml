@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Misc.HideIcon">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_hide_icons"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@drawable/icon"
+            android:id="@+id/current_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/calender_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center"
+            />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/camera_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center" />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/calculator_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/clock_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center" />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/default_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center" />
+
+        <ImageView
+            android:src="@mipmap/ic_launcher"
+            android:id="@+id/settings_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="25dp"
+            android:foregroundGravity="center" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Save choice"
+        android:background="@drawable/button"/>
+
+
+</LinearLayout>

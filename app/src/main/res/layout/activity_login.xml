@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/app_logo"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/pin_sign_in"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:hint="[PIN]"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:textAlignment="center"
+            android:inputType="numberPassword"
+            android:maxLength="20"
+            android:backgroundTint="@color/myBlue"
+            android:textCursorDrawable="@drawable/cursor_blue"/>
+
+        <TextView
+            android:id="@+id/lock_message_handler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#FF003B"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btn_sign_in"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="SUBMIT"
+            android:background="@drawable/button"/>
+<!--            android:backgroundTint="#FFFFFF"/>-->
+
+        <TextView
+            android:id="@+id/forgotten_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgotten Password?"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textColor="#0066FF"/>
+
+
+
+
+
+        <ImageView
+            android:layout_marginTop="200dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/fingerprint" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

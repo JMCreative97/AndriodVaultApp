@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    tools:context=".AuthenticationActivities.MainActivity">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar_hub"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary">
+
+                        <ImageView
+                            android:id="@+id/settings"
+                            android:layout_width="30dp"
+                            android:layout_height="45dp"
+                            android:text="Departure"
+                            android:layout_gravity="right"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/ic_settings"
+                            />
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_marginTop="80dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/hub_files"
+                            android:src="@drawable/hub_files"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/hub_notes"
+                            android:src="@drawable/hub_notes"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/hub_intruder_snap"
+                            android:src="@drawable/hub_intruder_snap"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"/>
+                        <ImageView
+                            android:id="@+id/hub_app_lock"
+                            android:src="@drawable/hub_app_lock"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                        <ImageView
+                            android:id="@+id/hub_hide_icon"
+                            android:src="@drawable/hub_hide_icon"
+                            android:layout_width="160dp"
+                            android:layout_height="160dp"
+                            android:layout_weight="1"/>
+                </LinearLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>

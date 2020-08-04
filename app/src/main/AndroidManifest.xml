@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.javaproject">
+
+    <uses-permission
+        android:name="android.permission.KILL_BACKGROUND_PROCESSES"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.USE_FINGERPRINT"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:required="true" />
+    <uses-permission
+        android:name="android.permission.PACKAGE_USAGE_STATS"
+        android:required="true"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.READ_PHONE_STATE"
+        android:required="true"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <service android:name="com.example.javaproject.AppLock.AppService" />
+
+        <activity
+            android:name=".Files.FileExplorerActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity
+            android:name=".Files.FolderExplorerActivity"
+            android:label="@string/title_activity_file_explorer"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".Misc.SettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".AppLock.LockScreen"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".AppLock.AppLockActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Misc.HideIcon"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FirstLaunchActivities.SetCryptography"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".IntruderSnaps.IntruderSnapActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".FirstLaunchActivities.LaunchActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".LocalGallery.GalleryActivity" />
+        <activity android:name=".CloudGallery.GalleryActivity" />
+        <activity
+            android:name=".CloudUploadImg.ImgSelecter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Authentication.RegisterActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Authentication.LoginActivity" />
+        <activity
+            android:name=".Misc.HubActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".Authentication.ResetPassword"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity
+            android:name=".NoteActivities.NotesActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".NoteActivities.CreateNoteActivtiy"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".NoteActivities.EditNoteActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <!-- changable icons -->
+
+
+<!--        Settings icon-->
+        <activity-alias
+            android:name=".settings_icon"
+            android:enabled="false"
+            android:icon="@mipmap/settings_icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+<!--         Mountain icon-->
+        <activity-alias
+            android:name=".mountain_icon"
+            android:enabled="false"
+            android:icon="@mipmap/mountain_icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+<!--         Camera icon-->
+        <activity-alias
+            android:name=".camera_icon"
+            android:enabled="false"
+            android:icon="@mipmap/camera_icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+<!--         Calculator icon-->
+        <activity-alias
+            android:name=".calculator_icon"
+            android:enabled="false"
+            android:icon="@mipmap/calculator_icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+<!--         Clock icon-->
+        <activity-alias
+            android:name=".clock_icon"
+            android:enabled="false"
+            android:icon="@mipmap/clock_icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+<!--         Calender-->
+        <activity-alias
+            android:name=".calender_icon"
+            android:enabled="false"
+            android:icon="@mipmap/calender_icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <activity-alias
+            android:name=".default_icon"
+            android:enabled="true"
+            android:icon="@drawable/icon"
+            android:label="Simple Safe"
+            android:targetActivity=".Authentication.RegisterActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity-alias>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.javaproject.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

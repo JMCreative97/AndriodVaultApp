@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Authentication.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="180dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REGISTER"
+            android:layout_gravity="center"
+            android:textSize="50dp"/>
+
+        <EditText
+            android:id="@+id/email_register_in"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="[EMAIL]"
+            android:inputType="textEmailAddress"
+            android:maxLength="40"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="@color/myBlue"/>
+
+        <EditText
+            android:id="@+id/pin_register_in"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:hint="[PIN]"
+            android:inputType="numberPassword"
+            android:maxLength="20"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:backgroundTint="@color/myBlue"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btn_register_in"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+</LinearLayout>

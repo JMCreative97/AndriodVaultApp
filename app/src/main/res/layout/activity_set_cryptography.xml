@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FirstLaunchActivities.SetCryptography">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="30dp">
+
+            <!--ENCRYPTION -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Advanced Encryption"
+                android:padding="10dp"
+                />
+            <!--AES-256-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:background="@color/myBlue">
+
+                <ImageView
+                    android:id="@+id/AES_drop_down"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/AES_drop_up"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AES-256"
+                        android:textSize="18dp"
+                        android:textColor="#ffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Recommended"
+                        android:textSize="12dp"
+                        android:textColor="#ffff"
+                        />
+
+                    <TextView
+                        android:id="@+id/AES_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Title: Advanced Encrpytion Standard \nKey Size: 256 bits \nBlock Size: 128 bits \nSpeed: Fast \nSecurity: Secure"
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:textColor="#ffff"
+                        />
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_AES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:buttonTint="#ffff"
+                    />
+
+            </LinearLayout>
+            <!--TRIPLE DES -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:background="@color/myBlue">
+
+                <ImageView
+                    android:id="@+id/DES_drop_down"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/DES_drop_up"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_margin="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TripleDES"
+                        android:textSize="18dp"
+                        android:layout_weight="10"
+                        android:textColor="#ffff"
+
+                        />
+                    <TextView
+                        android:id="@+id/TripleDES_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Title: Triple Data Encryption Standard \nKey Size: 192 bits \nBlock Size: 128 bits \nSpeed: Normal \nSecurity: Less Secure"
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:textColor="#ffff"
+                        />
+
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_TripleDES"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:buttonTint="#ffff"
+                    />
+
+            </LinearLayout>
+
+            <!--BLOWFISH -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:background="@color/myBlue">
+
+                <ImageView
+                    android:id="@+id/BLOWFISH_drop_down"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/BLOWFISH_drop_up"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_margin="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BlowFish"
+                        android:textSize="18dp"
+                        android:layout_weight="10"
+                        android:textColor="#ffff"
+
+                        />
+                    <TextView
+                        android:id="@+id/BlowFish_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Title: BlowFish \nKey Size: 448 bits \nBlock Size: 64 bits \nSpeed: Normal \nSecurity: Extra Secure"
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:textColor="#ffff"
+                        />
+
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_BlowFish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:buttonTint="#ffff"
+                    />
+
+            </LinearLayout>
+
+            <!--HASH-->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="Advanced Hash"
+                android:padding="10dp"
+
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:background="@color/myBlue">
+
+                <ImageView
+                    android:id="@+id/PBKDF2_drop_down"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/PBKDF2_drop_up"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PBKDF2"
+                        android:textSize="18dp"
+                        android:layout_weight="10"
+                        android:textColor="#ffff"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Recommeded"
+                        android:textSize="12dp"
+                        android:textColor="#ffff"
+                        />
+
+                        />
+                    <TextView
+                        android:id="@+id/PBKDF2_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Title: Secure Hash Algorithm \nSpeed: Fast \nSecurity: Secure"
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:textColor="#ffff"
+                        />
+
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_PBKDF2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:buttonTint="#ffff"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="15dp"
+                android:padding="10dp"
+                android:background="@color/myBlue">
+
+                <ImageView
+                    android:id="@+id/SHA_drop_down"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/SHA_drop_up"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_arrow_drop_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SHA-256"
+                        android:textSize="18dp"
+                        android:layout_weight="10"
+                        android:layout_margin="3dp"
+                        android:textColor="#ffff"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/SHA_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="italic"
+                        android:text="Title: Secure Hash Algorithm \nSpeed: Fast \nSecurity: Secure"
+                        android:textSize="12dp"
+                        android:visibility="gone"
+                        android:textColor="#ffff"
+                        />
+
+
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/radio_SHA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="1"
+                    android:buttonTint="#ffff"
+
+                    />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/Continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Continue"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:background="@drawable/button"/>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
